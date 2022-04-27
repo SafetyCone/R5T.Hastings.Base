@@ -2,10 +2,13 @@
 
 using R5T.Delos;
 
+using R5T.T0064;
+
 
 namespace R5T.Hastings
 {
-    public interface IMachineLocationProvider
+    [ServiceDefinitionMarker]
+    public interface IMachineLocationProvider : IServiceDefinition
     {
         MachineLocation GetMachineLocation();
     }
